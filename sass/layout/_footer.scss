@@ -13,16 +13,6 @@
   margin-right: 70px;
 }
 
-.logo--reverse {
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-}
-
 .footer-contacts__link {
   font-style: normal;
   line-height: 1.71;
@@ -33,11 +23,10 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+  }
 }
 
 .footer-contacts__link--address {
@@ -62,8 +51,10 @@
   display: flex;
 }
 
-.footer-media__item + .footer-media__item {
-  margin-left: 10px;
+.footer-media__item {
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .footer-media__link {
@@ -78,11 +69,10 @@
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.footer-media__link:hover,
-.footer-media__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-media__icon {
@@ -103,11 +93,10 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-}
-
-.footer-signup__input::placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-signup__btn {
